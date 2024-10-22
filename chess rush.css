@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  caret-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-image: url(images/lofy.jpg);
+  background-size: 100% 120%;
+}
+
+.board {
+  margin: 20px auto;
+  width: calc((100px * 8) + 2px);
+  height: calc((100px * 8) + 2px);
+  /* background-color:#808080; */
+  /* background: linear-gradient(to right, #e0e0e0, #808080, #e0e0e0,#808080); */
+  /* background: linear-gradient(to right, #FFD700, #FFDF00, #FFD700,#FFDF00); */
+  background-image: linear-gradient(
+    to right,
+    #f9f295,
+    #e0aa3e,
+    #e0aa3e,
+    #d79634,
+    #e0aa3e,
+    #efe664
+  );
+  /* background-image: url(images/gold.jpg); */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  /* box-sizing: unset; */
+  border: 1px solid;
+  border-image: linear-gradient(
+      to right,
+      #b7b5b5,
+      #808080,
+      #b7b5b5,
+      #808080,
+      #b7b5b5
+    )
+    1;
+}
+.sideBar {
+  position: absolute;
+  top: -1px;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #333333fc;
+}
+.sign {
+width: 160px;
+height: 60px;
+margin: 100px auto;
+background-color: whitesmoke;
+padding: 0 10px;
+font-weight: 900;
+color: #000000;
+
+}
+.sign span {
+color: red;
+}
+.start {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  border: 0.1px solid black;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(39, 39, 244);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.work {
+  background-color: rgb(17, 17, 108);
+  background-size: 40px, 40px;
+}
